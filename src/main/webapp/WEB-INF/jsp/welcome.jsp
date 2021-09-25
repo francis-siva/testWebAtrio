@@ -12,10 +12,16 @@
 		
 		<h3>Saisissez vos informations: </h3>
 		<form action="/register">
-		  <label for="prenom">Prénom:</label><br>
-		  <input type="text" id="prenom" name="prenom" value="John"><br>
+		  <label for="prenom">Prénom:</label>
+		  <input type="text" id="prenom" name="prenom" value="John">
+		  <br />
 		  <label for="nom">Last name:</label><br>
-		  <input type="text" id="nom" name="nom" value="Doe"><br><br>
+		  <input type="text" id="nom" name="nom" value="Doe">
+		  <br />
+		  
+		  <label for="birth">Date de naissance:</label>
+		  <input type="date" id="birth" name="birth" value="2021-09-25">
+   		  <br />
 		  <input type="submit" value="Envoyer">
 		</form> 
 	</body>
