@@ -1,4 +1,4 @@
-package com.codestudio.corp.Repository;
+package com.codestudio.corp.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
