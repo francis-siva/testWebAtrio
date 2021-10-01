@@ -1,0 +1,10 @@
+h1 { padding-left: 1em; }
+h3 { text-align: center; }
+
+.form-field {
+	width: 12em;
+	height: 1.5em;
+	margin-bottom: 1em;
+}
+
+.input-submit { width: 12.6em; }
