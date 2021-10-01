@@ -1,6 +1,6 @@
 package com.codestudio.corp.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,9 +21,9 @@ public class Personne {
 	@Column(name= "prenom", length = 30, nullable = false)
 	private String prenom;
 	
-	private Date naissance;
+	private LocalDate naissance;
 
-	public Personne(String nom, String prenom, Date naissance) {
+	public Personne(String nom, String prenom, LocalDate naissance) {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.naissance = naissance;
@@ -53,11 +53,11 @@ public class Personne {
 		this.prenom = prenom;
 	}
 
-	public Date getNaissance() {
+	public LocalDate getNaissance() {
 		return naissance;
 	}
 
-	public void setNaissance(Date naissance) {
+	public void setNaissance(LocalDate naissance) {
 		this.naissance = naissance;
 	}
 	
