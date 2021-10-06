@@ -29,6 +29,8 @@ public class Personne {
 		this.naissance = naissance;
 	}
 
+	public Personne() {	}
+
 	public Integer getId() {
 		return id;
 	}
@@ -61,5 +63,8 @@ public class Personne {
 		this.naissance = naissance;
 	}
 	
-	
+	public String toString() {
+		return "Personne [id: " + this.getId() + ", nom: " +
+			this.getNom() + ", prenom: " + this.getPrenom() + ", naissance: " + this.getNaissance() + "]";
+	}
 }
