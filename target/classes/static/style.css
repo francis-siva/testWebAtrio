@@ -13,7 +13,18 @@ h3 {
 
 .input-submit { width: 12.6em; }
 
+table { border-collapse: collapse; }
+
+th, td {
+	border: solid;
+	width: 5%;
+	text-align: center;
+}
+
+tr { height: 2.5em; }
+
 .userName { font-size: 2em; }
+
 .warning {
 	color: red;
 	font-style: italic;

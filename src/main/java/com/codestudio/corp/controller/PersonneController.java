@@ -2,6 +2,7 @@ package com.codestudio.corp.controller;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -81,7 +82,7 @@ public class PersonneController {
 	}
 	
 	@GetMapping(value= "/listperson")
-	public String getListPerson() {
+	public String getListPerson(ModelMap map) {
 		
 		System.out.println("member");
 		
@@ -90,7 +91,11 @@ public class PersonneController {
 			System.out.println(">>>Nom: " + pers.getNom() + " Prenom: " +
 				pers.getPrenom() + " Naissance: " + pers.getNaissance());
 		}
+		ArrayList<Personne> listperson = this.personneService.listPersonne();
+		System.out.println("Before JSP View");
+		System.out.println(listperson);
+		map.addAttribute("listperson", listperson);
 		
-		return "user";
+		return "memberlist";
 	}
 }
